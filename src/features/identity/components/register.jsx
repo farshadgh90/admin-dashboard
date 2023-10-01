@@ -8,7 +8,7 @@ import {
   useNavigate,
   useRouteError,
 } from "react-router-dom";
-import { httpService } from "../../../core/http-service";
+import { httpService } from "@core/http-service";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 

@@ -32,6 +32,7 @@
       "areNotRegistered": "You're not registered?",
       "validation": {
         "mobileRequired": "Mobile is required",
+        "mobileLength": "Mobile number must be 11 digits",
         "passwordRequired": "Password is required",
         "IncorrectUserNameOrPassword": "The username or password is incorrect"
       }

@@ -32,6 +32,7 @@
       "areNotRegistered": "ثبت نام نکرده اید؟",
       "validation": {
           "mobileRequired": "موبایل الزامی است",
+          "mobileLength": "شماره موبایل باید 11 رقم باشد",
           "passwordRequired": "رمز عبور الزامی است",
           "IncorrectUserNameOrPassword": "موبایل یا رمز عبور صحیح نمی باشد"
       }

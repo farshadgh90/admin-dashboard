@@ -1,9 +1,16 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import Sidebar from "./sidebar";
 import Footer from "./footer";
 import TopNav from "./top-nav";
 
 const MainLayout = () => {
+  const token = localStorage.getItem("token");
+  const navigate = useNavigate();
+
+  if (!token) {
+    navigate("/login");
+  }
+
   return (
     <div className="wrapper" style={{ minHeight: "100h" }}>
       <Sidebar />

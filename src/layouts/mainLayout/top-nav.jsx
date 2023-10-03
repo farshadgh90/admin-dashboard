@@ -1,7 +1,7 @@
 // import { useNavigate } from "react-router-dom";
-import ChangeLanguage from "../components/change-language";
-import ChangeTheme from "../components/change-theme";
-import { useAppContext } from "../contexts/app/app-context";
+import ChangeLanguage from "../../components/change-language";
+import ChangeTheme from "../../components/change-theme";
+import { useAppContext } from "../../contexts/app/app-context";
 
 const TopNav = () => {
     const {toggleSidebar} = useAppContext();

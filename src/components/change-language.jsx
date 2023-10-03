@@ -28,8 +28,6 @@ const ChangeLanguage = () => {
     };
   }, [show]);
 
-  console.log("language state: ", language);
-
   return (
     <div className="dropdown">
       <a className="nav-flag dropdown-toggle" onClick={() => setShow(true)}>

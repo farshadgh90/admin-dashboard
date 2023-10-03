@@ -4,8 +4,9 @@ import Register, {
   registerAction,
 } from "./features/identity/components/register";
 import IdentityLayout from "./layouts/identity-layout";
-import MainLayout from "./layouts/main-layout";
-import Courses from "./pages/courses";
+import MainLayout from "./layouts/mainLayout/main-layout";
+import Courses, { coursesLoader } from "./pages/courses";
+import CourseCategories from "./pages/course-categories";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,12 @@ const router = createBrowserRouter([
       {
         element: <Courses />, // content pishfarz
         index: true, // MainLayout hich contenti nadarad. baraye hamin bayad ye content pishfarz barash set konim.
+        loader: coursesLoader, // کار این فانکشن گرفتن اصلاعات دوره ها است که قبل از اکتیو شدن روت کال میشود و دیتای روت رو برمیگرداند
       },
+      {
+        path: "/course-categories",
+        element: <CourseCategories />,
+      }
     ],
   },
   {

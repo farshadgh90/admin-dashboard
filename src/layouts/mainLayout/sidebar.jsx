@@ -1,4 +1,4 @@
-import { useAppContext } from "../contexts/app/app-context";
+import { useAppContext } from "../../contexts/app/app-context";
 import logo from "@assets/images/logo.svg";
 import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router-dom";
@@ -7,7 +7,7 @@ const Sidebar = () => {
     const { showSidebar } = useAppContext();
     const { t } = useTranslation();
     return (
-        <nav className={`sidebar ${showSidebar ? "collapsed" : ""}`}>
+        <nav className={`sidebar ${!showSidebar ? "collapsed" : ""}`}>
             <div className="sidebar-content">
                 <a className="sidebar-brand d-flex flex-column align-items-center pt-0 mb-0">
                     <img src={logo} style={{ height: "80px" }} />

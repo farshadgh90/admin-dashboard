@@ -14,7 +14,7 @@ const Pagination = ({ totalRecords, pageSize = import.meta.env.VITE_PAGE_SIZE })
   };
 
   const nextPage = () => {
-    if (currentPage < pages) setSearchParams({ page: currentPage - 1 });
+    if (currentPage < pages) setSearchParams({ page: currentPage + 1 });
   };
 
   return (

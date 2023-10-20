@@ -50,7 +50,12 @@
         "blogManagement": "مدیریت بلاگ",
         "tagManagement": "مدیریت تگ ها",
         "postManagement": "مدیریت پست ها"
-      }
+      },
+      "topSidebar": {
+        "logout": "خارج شوید"
+      },
+      "newCourse": "افزودن دوره جدید",
+      "loading": "در حال دریافت اطلاعات ..."
     },
     "categoryList": {
       "DeleteIsNotPossible": "امکان حذف این دسته وجود ندارد",

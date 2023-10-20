@@ -50,7 +50,12 @@
         "blogManagement": "BlogManagement",
         "tagManagement": "TagManagement",
         "postManagement": "PostManagement"
-      }
+      },
+      "topSidebar": {
+        "logout": "Log out"
+      },
+      "newCourse": "Add New Course",
+      "loading": "Receiving Information ..."
     },
     "categoryList": {
       "DeleteIsNotPossible": "It is not possible to delete this category",
